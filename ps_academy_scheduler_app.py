@@ -46,7 +46,7 @@ if course_file and trainer_file:
             st.markdown(f"**Mode:** {course['Delivery Mode']}")
 
             en_post = f"New Course: {course['Course Title (EN)']} by {selected_trainer['Name']} from {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}"
-            ar_post = f"دورة جديدة: {course['Course Title (AR)']} مع {selected_trainer['Name']} من {start_date.strftime('%Y-%m-%d')} إلى {end_date.strftime('%Y-%m-%d')}"
+            ar_post = f"Arabic post generation skipped (no 'Course Title (AR)' found)."
 
             st.subheader("Marketing Posts")
             st.code(en_post)
